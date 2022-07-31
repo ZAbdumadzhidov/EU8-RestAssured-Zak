@@ -92,7 +92,7 @@ public class SimpleGetRequest {
         Assertions.assertEquals("text/plain;charset=UTF-8",response.contentType());
 
         //verify we have headers named date
-        //we use hasHeaderWithname method to verify header exist or not - it returns boolean
+        //we use hasHeaderWithName method to verify header exist or not - it returns boolean
         Assertions.assertTrue(response.headers().hasHeaderWithName("Date"));
         //how to get and header from response using header key ?
         //we use response.header(String headerName) method to get any header value
