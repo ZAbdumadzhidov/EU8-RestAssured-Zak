@@ -2,13 +2,12 @@ package com.cydeo.Day2;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.internal.common.assertion.Assertion;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class SimpleGetRequest {
+public class SimpleGetRequests {
 
     String url = "http://54.196.212.186:8000";
 
@@ -81,7 +80,7 @@ public class SimpleGetRequest {
 
     @DisplayName("GET request to /api/hello")
     @Test
-    public void test3(){
+    private void test3(){
         //send request and save response inside the response object
         Response response = RestAssured.when().get(url + "/api/hello");
 
