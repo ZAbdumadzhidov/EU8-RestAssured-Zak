@@ -31,14 +31,4 @@ public class hrGetRequests {
         and response body contains Americas
      */
 
-    @Test
-    public void test2() {
-
-        Response response = RestAssured.get("regions/2");
-
-
-
-
-
-
-}}
+}
